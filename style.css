@@ -1,0 +1,203 @@
+/*LEU BODI*/
+body{
+    margin: 0;
+    font-family: 'Quicksand', sans-serif;
+    background: rgb(15, 15, 15);
+}
+
+/* LIKON */
+
+i{
+    position: absolute;
+    top: 3%;
+    left: 2%;
+
+    color: white;
+    font-size: 30px;
+    transition: 0.3s;
+
+    opacity: 0;
+    display: none;
+}
+
+.i-show{
+    position: absolute;
+    top: 3%;
+    left: 2%;
+
+    color: white;
+    font-size: 30px;
+    transition: 0.3s;
+
+    opacity: 0.2;
+    display: block;
+}
+
+i:hover{
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+/*LEU FORM*/
+
+form{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+
+    margin-right: 5%;
+    margin-left: 5%;
+}
+
+form input{
+    width: 30%;
+    margin-bottom: 15px;
+}
+
+form input[type="text"]{
+    padding: 8px 0px;
+    border: none;
+    border-bottom: 2px solid;
+    transition: 0.3s;
+    outline: none;
+    border-radius: 0px;
+    background: none;
+    font-size: 20px;
+    text-align: center;
+    opacity: 0.8;
+}
+
+form input::placeholder{
+    transition: 0.3s;
+}
+
+form input:focus::placeholder{
+    opacity: 0;
+}
+
+input[type="text"]{
+    border-color:rgb(99, 145, 185);
+    caret-color: rgb(99, 145, 185);
+    color: rgb(99, 145, 185);
+}
+
+input::placeholder{
+    color: rgb(99, 145, 185);
+}
+
+input:focus{
+    border-bottom: 2px solid rgb(99, 145, 185);
+}
+
+.button{
+    font-family: 'Quicksand', sans-serif;
+    text-decoration: none;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 2px;
+    transition: background-color 0.3s, color 0.3s;
+    margin-top: 2%;
+    background: rgb(99, 145, 185);
+    color: white;
+    border: 2px rgb(99, 145, 185) solid;
+}
+
+.button:hover{
+    transition: background-color 0.3s, color 0.3s;
+    cursor: pointer;
+    background: rgba(43, 98, 134, 0.5);
+}
+
+/*LEU REST*/
+
+section{
+    margin-right: 5%;
+    margin-left: 5%;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+    transition: 0.3s;
+}
+
+.section-co{
+    margin-right: 5%;
+    margin-left: 5%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+    transition: 0.3s;
+}
+
+.section-co div{
+    width: 50%;
+}
+
+section div{
+    width: 30%;
+    background: rgb(99, 145, 185);
+    margin-top: 15px;
+    margin-bottom: 15px;
+
+    color: white;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+section div h4{
+    margin-bottom: 10px;
+    margin-top: 25px;
+    font-size: 28px;
+}
+
+section div p{
+    margin-bottom: 25px;
+    margin-top: 10px;
+    font-size: 25px;
+}
+
+@media screen and (max-width: 850px){
+    .i-show{    
+        opacity: 0;
+        display: none;
+    }
+    
+    form{
+        flex-direction: column;
+    }
+
+    form input{
+        width: 100%;
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+    
+    section{
+        flex-direction: column;
+    }
+
+    section div{
+        width: 100%;
+    }
+
+    .section-co div{
+        width: 100%;
+    }
+}
