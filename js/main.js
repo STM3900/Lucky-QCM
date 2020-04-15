@@ -53,25 +53,39 @@ function createQuestions(section) {
         newSection.appendChild(newD);
     }
     Icon.classList.add('i-show');
+    console.log(bool);
+    if(bool){
+        newSection.classList.add('section-co');
+    }
     b.appendChild(newSection);
 
+    /*
     if(!boolCreate){
         Section = document.querySelector('section');
         boolCreate = true;
     }
+    */
+
+    Section = document.querySelectorAll('section');
 
     return newSection;
 }
 
 function toggleStyle(){
+    console.log(bool);
     if(!bool){
-        Section.classList.add('section-co');
+        for(let i = 0; i < Section.length; i++){
+            Section[i].classList.add('section-co');
+        }
         Icon.classList.replace('fa-list', 'fa-columns');
         bool = true;
     }
     else{
-        Section.classList.remove('section-co');
+        for(let j = 0; j < Section.length; j++){
+            Section[j].classList.remove('section-co');
+        }
         Icon.classList.replace('fa-columns', 'fa-list');
         bool = false;
     }
+    console.log(bool);
 }
