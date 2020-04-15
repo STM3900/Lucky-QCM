@@ -3,4 +3,4 @@
 
 Ce site vous permettra, en rentrant le nombre de questions et le nombre de réponses par question, de générer une réponse **aléatoire** à chaque question !
 
-**Note :** Je ne prends pas en charge les notes pourries que vous allez sûrement obtenir si vous utilisez ce site.
+***Note :** Je ne prends pas en charge les notes pourries que vous allez sûrement obtenir si vous utilisez ce site.*
